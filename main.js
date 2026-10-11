@@ -56,7 +56,7 @@ var tl2 = gsap.timeline({
 })
 
 tl2.to("#cans", {
-    top: "242%",
+    top: "230%",
     left: "50%",
     width: "30%",
     rotate: "0deg"

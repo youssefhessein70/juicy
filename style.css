@@ -12,13 +12,16 @@
 .hero {
     position: relative;
     background-color: #825dd2;
+    max-width: 220vh;
+    min-width: 0;
     height: 100vh;
-
 }
 
 .container {
-    width: 80%;
     margin: 0 auto;
+    max-width: 220vh;
+    min-width: 0;
+    height: 60vh;
 }
 
 .hero::after {
@@ -30,7 +33,6 @@
     width: 80%;
     height: 100%;
     background: radial-gradient(circle, #bd9fff, transparent, transparent);
-
 
 }
 
@@ -60,8 +62,10 @@ header .logo {
     font-size: 40px;
     letter-spacing: 2px;
     font-family: "Anton", serif;
+    cursor: pointer;
 
 }
+
 
 header .nav_Links {
     display: flex;
@@ -98,7 +102,7 @@ header .nav_Links a:hover {
 
 #cans {
     position: absolute;
-    width: 35%;
+    width: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -162,13 +166,14 @@ header .nav_Links a:hover {
 }
 
 .about {
-    padding: 100px 0;
-    height: 100vh;
+    padding: 100px 20px;
+    height: 85vh;
 }
 
 .about .text {
-    width: 50%;
+    width: 60%;
 }
+
 
 .about .text h2 {
     font-size: 3.5vw;
@@ -231,7 +236,7 @@ header .nav_Links a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 130px;
+    padding-top: 115px;
 
 }
 
@@ -244,7 +249,9 @@ header .nav_Links a:hover {
 }
 
 .stand img {
-    width: 55%;
+    width: 58%;
+    z-index: 1;
+    padding-top: 247px;
 }
 
 .stand h3 {
@@ -252,11 +259,121 @@ header .nav_Links a:hover {
     top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 26vh;
+    font-size: 18vw;
     text-transform: uppercase;
     font-family: "Anton", serif;
     color: #6a47b4;
-    letter-spacing: 7px;
+    letter-spacing: 18px;
+
+
+
+
+
+}
+
+
+
+
+@media(max-width:915px) {
+
+    .hero {
+        max-width: 100vh;
+
+
+    }
+
+
+    .container {
+
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 26vw;
+        letter-spacing: 6px;
+
+
+
+    }
+
+    .hero .logo {
+        font-size: 20px;
+
+    }
+
+    .hero .nav_Links {
+        gap: 20px;
+
+
+    }
+
+    .hero .nav_Links a {
+        font-size: 13px;
+
+    }
+
+
+    .about .text h2 {
+        font-size: 2.2vh;
+
+    }
+
+    .about .text h2 span {
+        font-size: 1.7vh;
+
+    }
+
+    .about .text .boxs .box img {
+        width: 60%;
+    }
+
+    .about .text .boxs .box h4 {
+        font-size: 2.2vh;
+
+
+    }
+
+    .about .text .boxs .box p {
+        font-size: 0.9vh;
+        font-weight: 600;
+    }
+
+    /* .about .text .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+
+
+    .stand {
+
+        padding-top: 130px;
+        padding-bottom: 50px;
+
+
+    }
+
+    .stand h3 {
+        padding-top: 150px;
+        font-size: 15vw;
+        letter-spacing: 8px;
+        align-items: center;
+
+
+    }
+
+    .stand img {
+        width: 58%;
+        z-index: 1;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #cans {
+        width: 50%;
+
+    }
 
 
 
